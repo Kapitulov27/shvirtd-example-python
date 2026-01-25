@@ -3,7 +3,10 @@ include:
 services:
 
   web:
-    image: crpnjqqrd3n0mqvocb27/image
+#    image: crpnjqqrd3n0mqvocb27/image
+    build:
+      context: .
+      dockerfile: Dockerfile.python
     restart: always
     networks:
         backend:
